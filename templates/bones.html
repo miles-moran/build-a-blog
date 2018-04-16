@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .wrapper {
+                display: grid;
+                grid-template-columns: 1f 3fr 1fr;
+                grid-gap: 1em;
+                margin: 0 10em 0 10em;
+            }
+            .nav {
+                background-color: gray;
+                border: 1em solid black;
+            }
+            .left {
+                display: inline-block;
+            }
+            .top {
+                grid-area: inline-block;
+            }
+            .right {
+                grid-area: inline-block;
+            }
+            
+        </style>
+    </head>
+    <body>
+            <div class="wrapper">
+                <div class="nav" class="left">Test</div>
+                <div class="nav" class="top">Lorem80</div>
+                <div class="nav" class="right">Lorem80</div>
+            </div>
+    </body>
+</html>
+ 

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+<!-- extends -->
+{% block content %}
+<div class="user_list">
+<form action="/newpost" method="POST">
+<h1>New Post</h1>
+<table>
+    <tbody>
+        <tr>
+            <td>Title</td>
+            <td><input type="text" name="new_title"></td>
+        </tr>
+        <tr>
+            <td>Body</td>
+            <td><textarea name="new_body"></textarea></td>
+        </tr>
+    <tbody>
+</table>
+    <input type="submit" value="Post">
+</form>
+{% if entry_error == True %} You failed to enter a title or body {% endif %} 
+</div>
+{% endblock %}
+
